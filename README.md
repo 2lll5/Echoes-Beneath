@@ -38,21 +38,30 @@ Browser Cookie 保存：
 
 舊版線性 Cookie 會自動轉換為 v3 根節點；重啟次數仍保留。
 
-## 每小時更新
+## 每 4 小時更新
 
-GitHub Actions 每個整點執行 `scripts/generate-story.mjs`。
+GitHub Actions 每 4 小時執行一次 `scripts/generate-story.mjs`。
+
+GitHub cron 使用 UTC；換算成台北時間，預定於每天：
+
+- 00:00
+- 04:00
+- 08:00
+- 12:00
+- 16:00
+- 20:00
 
 排程不再新增一個所有玩家共用的線性章節，而是：
 
-- 每小時增加 `releasedDepth`
+- 每 4 小時增加一次 `releasedDepth`
 - 為該深度加入新的環境異常、時間扭曲與低語
 - 同時解鎖該層所有可能路徑的下一節點
 - 每個新節點仍有 3 個獨立出口
-- 同一個台北整點重複執行不會重複增加深度
+- 同一個台北時段重複執行不會重複增加深度
 
 深度 6 理論上已有 `3^6 = 729` 條選擇路徑；後續不需要把 729 筆完整故事全部寫死，故事引擎會根據路徑、所在地與 Context 產生連貫節點。
 
-2026-07-31 23:00（Asia/Taipei）會啟用最終狀態。玩家會依自己真正走過的場所、威脅與心理路線取得不同版本的結局。
+一般更新採 4 小時週期，但另保留獨立最終排程：2026-07-31 23:00（Asia/Taipei）會準時啟用最終狀態。玩家會依自己真正走過的場所、威脅與心理路線取得不同版本的結局。
 
 ## 本機執行
 
@@ -61,10 +70,10 @@ npm install
 npm run dev
 ```
 
-測試整點更新：
+測試故事圖更新：
 
 ```bash
-STORY_NOW=2026-07-15T09:00:00+08:00 npm run story:generate
+STORY_NOW=2026-07-15T12:00:00+08:00 npm run story:generate
 ```
 
 ## 圖像資產
@@ -79,4 +88,4 @@ npm run art:generate
 
 ## 部署
 
-專案使用 Next.js 並部署於 Vercel。前端直接讀取 GitHub 最新的 `public/story.generated.json`，因此每小時解鎖新深度時不需要重新建置 Vercel。
+專案使用 Next.js 並部署於 Vercel。前端直接讀取 GitHub 最新的 `public/story.generated.json`，因此每 4 小時解鎖新深度時不需要重新建置 Vercel。
