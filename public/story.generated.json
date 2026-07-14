@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-07-14T13:50:00.000Z",
+  "generatedAt": "2026-07-14T14:00:00.000Z",
   "timezone": "Asia/Taipei",
   "finalScheduledAt": "2026-07-31T23:00:00+08:00",
-  "releasedDepth": 10,
+  "releasedDepth": 11,
   "final": false,
   "proseStyle": "modern-horror-novel",
   "layerEvents": [
@@ -116,6 +116,17 @@
       "sceneBeat": "你的手機響了一聲。兩秒後，隔壁相連的空間裡又響起完全相同的通知音。第二個聲音更近，像有人拿著另一支相同的手機站在門後。",
       "sensory": "螢幕跳出一張剛拍攝的照片：照片裡的你正伸手去碰上一幕沒有選的東西，背景仍是你現在所在的地方。",
       "dialogue": "我記得你上一個選擇。你不碰的東西，另一個你會替你碰。"
+    },
+    {
+      "depth": 11,
+      "hourKey": "20260714-22",
+      "releaseAt": "2026-07-14 22:00",
+      "motif": "手機收到一段從相連出口另一側拍攝的提前錄影",
+      "distortion": "錄影裡的你比現實早一步穿過門口",
+      "whisper": "等他先進來。別站在他替你留的位置。",
+      "sceneBeat": "手機自行播放一段十四秒的錄影。鏡頭架在相連出口的另一側，畫面裡的你正從眼前這道門走進來，右手握著手機；錄影進度只剩三秒時，一個穿灰色外套的女人從鏡頭後伸手，把畫面裡的你猛地拉到門邊。",
+      "sensory": "揚聲器傳出衣料被扯緊的窸窣聲，接著是一口貼近麥克風的喘息。現實中的門框同時震了一下，灰塵落上你的鞋尖，空氣裡浮出濕羊毛和廉價薄荷菸的味道。",
+      "dialogue": "等他先進來。別站在他替你留的位置。"
     }
   ],
   "updates": [
@@ -128,6 +139,7 @@
     {"hourKey":"20260714-17","releaseAt":"2026-07-14 17:00","type":"depth","releasedDepth":7},
     {"hourKey":"20260714-19","releaseAt":"2026-07-14 19:00","type":"depth","releasedDepth":8},
     {"hourKey":"20260714-20","releaseAt":"2026-07-14 20:00","type":"depth","releasedDepth":9},
-    {"hourKey":"20260714-21","releaseAt":"2026-07-14 21:00","type":"depth","releasedDepth":10}
+    {"hourKey":"20260714-21","releaseAt":"2026-07-14 21:00","type":"depth","releasedDepth":10},
+    {"hourKey":"20260714-22","releaseAt":"2026-07-14 22:00","type":"depth","releasedDepth":11}
   ]
 }
