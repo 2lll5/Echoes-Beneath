@@ -32,44 +32,44 @@ function pick(list, seed, offset = 0) {
 }
 
 const sceneBeats = [
-  "門縫下滲進一道淡藍色的光。你把手機貼近地面，鏡頭裡只拍到一雙蹲在門外的膝蓋。",
-  "玻璃表面蒙上一層白霧。霧裡有人從另一側寫下你的名字，最後一筆還沒乾。",
-  "水管裡傳來三下敲擊。第三下落下時，你腳邊的螺絲跟著跳了一下。",
-  "所有能反光的地方同時少映出一件東西。你回頭確認，那件東西仍在原位。",
-  "遠處的感應燈一盞接一盞亮起。燈光沒有離開，反而沿著走廊一路朝你靠近。",
-  "你聞到雨水泡過鐵門的味道。下一秒，地板上多出一枚還在滴水的鞋印。",
-  "門把表面迅速結霜。白霜裡浮出一組剛離開的指印，掌紋和你完全相同。",
-  "角落那小塊陰影沒有跟著手電筒移動。影子裡的人正在做你上一幕沒有選的動作。",
-  "手機、電梯和洗衣機面板同時亮出數字 03。你還沒碰按鈕，第三個選項已先變紅。",
-  "你的手機響了一聲。兩秒後，相連的下一個空間裡又響起完全相同的通知音。",
-  "牆紙從裡面鼓起一個手掌大小的形狀。五根手指慢慢分開，像在找能撕開的位置。",
-  "防火門的玻璃映出一個站在你背後的人。你回頭時，玻璃裡的他仍然沒有消失。"
+  "門縫下的藍光忽然被一顆頭擋住。",
+  "白霧在玻璃上寫出你的名字。",
+  "水管敲了三下，腳邊螺絲跟著跳動。",
+  "所有反光同時漏掉同一件東西。",
+  "感應燈一盞盞朝你亮來。",
+  "地板多出一枚仍在滴水的鞋印。",
+  "門把結霜，浮出和你相同的掌紋。",
+  "角落影子正在做你沒選的動作。",
+  "附近面板同時亮出數字 03。",
+  "相連房間傳來第二次相同通知聲。",
+  "牆紙從裡面鼓出五根手指。",
+  "玻璃裡的人沒有隨你回頭。"
 ];
 
 const sensoryDetails = [
-  "冷氣沿著手腕鑽進袖口，身後有人很輕地咳了一聲。",
-  "空氣裡有潮濕鐵鏽和舊紙張的味道，舌根泛起淡淡苦味。",
-  "耳膜像搭電梯時一樣往內壓，遠處腳步反而先在你身後響起。",
-  "你呼出的白氣沒有散開，而是貼著牆面往出口方向爬。",
-  "鞋底摩擦聲總比你慢一步；你停，它也跟著停。",
-  "附近電器的指示燈一起熄滅，只剩手機螢幕照亮你的手。",
-  "地面灰塵被看不見的鞋底推開，留下半枚尚未完成的腳印。",
-  "金屬表面傳來細小震動，像有人在另一側用指甲慢慢刮。",
-  "燈光閃過時，附近每件物品都向同一方向偏了半公分。",
-  "你聽見自己的心跳被另一道較慢的心跳追上，兩者短暫重疊。"
+  "冷氣鑽進袖口，身後有人咳了一聲。",
+  "空氣帶著濕鐵與舊紙味。",
+  "耳膜發緊，腳步先在背後響起。",
+  "白氣貼著牆往出口爬。",
+  "你停下，另一雙鞋也停下。",
+  "電器全暗，只剩手機照亮手指。",
+  "灰塵被推開，留下半枚腳印。",
+  "金屬內側傳來慢慢刮動的指甲聲。",
+  "燈一閃，物品同時偏了半公分。",
+  "另一道較慢的心跳追上了你。"
 ];
 
 const dialogues = [
-  "別急著回頭。我就在你剛才看過的地方。",
-  "門可以打開，不代表外面是讓你出去的地方。",
-  "另一個你走得比較快。他已經看見下一層了。",
-  "先看他的鞋。你和他只有那裡不一樣。",
-  "別跑直線。它只會沿著你走過的路追。",
-  "那不是回憶。它正在替你把沒做的事補完。",
-  "我不是叫你別開門。我是叫你別讓它碰到你的手。",
-  "有人在另一條路替你按了第三個選項。",
-  "它看得懂你的眼神。別讓它知道下一扇門在哪裡。",
-  "你不碰的東西，另一個你會替你碰。"
+  "別回頭。我就在剛才那裡。",
+  "門能打開，不代表能出去。",
+  "另一個你已經先到了。",
+  "先看鞋，他和你只有那裡不同。",
+  "別跑直線，它會照著你的路追。",
+  "那不是回憶，它正在補完你的選擇。",
+  "別讓它碰到你的手。",
+  "有人替你按了第三項。",
+  "別讓它知道下一扇門在哪裡。",
+  "你不碰的東西，另一個你會碰。"
 ];
 
 const data = fs.existsSync(outputPath)
@@ -81,7 +81,8 @@ const data = fs.existsSync(outputPath)
       finalScheduledAt: "2026-07-31T23:00:00+08:00",
       releasedDepth: 6,
       final: false,
-      proseStyle: "modern-horror-novel",
+      proseStyle: "modern-horror-compact-v2",
+      narrativeVersion: 2,
       layerEvents: [],
       updates: []
     };
@@ -89,7 +90,8 @@ const data = fs.existsSync(outputPath)
 data.schemaVersion = 3;
 data.timezone = "Asia/Taipei";
 data.finalScheduledAt = "2026-07-31T23:00:00+08:00";
-data.proseStyle = "modern-horror-novel";
+data.proseStyle = "modern-horror-compact-v2";
+data.narrativeVersion = 2;
 data.releasedDepth = Number.isInteger(data.releasedDepth) ? data.releasedDepth : 6;
 data.layerEvents = Array.isArray(data.layerEvents) ? data.layerEvents : [];
 data.updates = Array.isArray(data.updates) ? data.updates : [];
@@ -128,6 +130,7 @@ const event = {
   depth: nextDepth,
   hourKey,
   releaseAt,
+  formatVersion: 2,
   motif: sceneBeat,
   distortion: sensory,
   whisper: dialogue,
@@ -144,4 +147,4 @@ data.updates = data.updates.slice(-520);
 data.generatedAt = now.toISOString();
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 fs.writeFileSync(outputPath, `${JSON.stringify(data, null, 2)}\n`);
-console.log(`Released story depth ${nextDepth} in modern horror novel style.`);
+console.log(`Released story depth ${nextDepth} in compact horror style.`);
