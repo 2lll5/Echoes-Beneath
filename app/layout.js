@@ -1,5 +1,4 @@
-import "./globals.css";
-import "./branching.css";
+import "./site.css";
 import "./effects.css";
 import HorrorEffects from "../components/HorrorEffects";
 
