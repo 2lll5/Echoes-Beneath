@@ -5,7 +5,7 @@ import "./narrative-refresh.css";
 import HorrorEffects from "../components/HorrorEffects";
 import PlayerIdentity from "../components/PlayerIdentity";
 import ResponsiveExperience from "../components/ResponsiveExperience";
-import NarrativeRefreshV2 from "../components/NarrativeRefreshV2";
+import NarrativeRefreshV3 from "../components/NarrativeRefreshV3";
 
 export const metadata = {
   title: "Echoes Beneath｜底下的回聲",
@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
       <body>
         <PlayerIdentity>
           <ResponsiveExperience>
-            <NarrativeRefreshV2>
+            <NarrativeRefreshV3>
               <HorrorEffects>{children}</HorrorEffects>
-            </NarrativeRefreshV2>
+            </NarrativeRefreshV3>
           </ResponsiveExperience>
         </PlayerIdentity>
       </body>
