@@ -1,0 +1,17 @@
+{
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "quality": "high",
+  "sharedStyle": "Cinematic psychological horror still for a premium web RPG, grounded contemporary apartment in Taiwan, realistic but slightly impossible architecture, oppressive negative space, low-key practical lighting, deep charcoal and restrained blood-red palette, subtle film grain, no gore, no visible monster in full, terror comes from one spatial detail that is almost plausible, consistent visual language across all scenes, landscape 3:2, leave lower third readable for UI overlay, no text, no logo, no watermark.",
+  "scenes": [
+    { "id": "core-001", "prompt": "A dark bedroom viewed from the computer desk, black monitor reflection showing a human silhouette blinking while the real chair is empty, curtains barely moving, one impossible second breath implied by condensation." },
+    { "id": "core-002", "prompt": "Interior view toward a closed apartment door at night, bright corridor light under the door, a pair of feet outside casting no shadow, while a second faint pair of feet is visible on the viewer's side." },
+    { "id": "core-003", "prompt": "An old group photograph lying on a desk, people arranged around an unnatural empty gap, a thin vertical shadow behind them touching every shoulder, tomorrow's date handwritten but illegible." },
+    { "id": "core-004", "prompt": "Smartphone on a desk in a dark room, front camera preview shows the owner's legs and an extra hand gripping the bottom edge from inside the screen, under-desk darkness too deep to read." },
+    { "id": "core-005", "prompt": "Computer screen after returning to a browser tab, a distant human figure in the artwork is now extremely close to the virtual camera, fingerprint fog on one choice button, realistic monitor reflections." },
+    { "id": "core-006", "prompt": "Apartment wall with three human silhouettes pressing outward from inside the plaster, each performing a different unchosen action, hairline cracks forming a door outline, warm handprints through cold paint." },
+    { "id": "core-007", "prompt": "Long residential hallway with motion sensor lights switching on toward the viewer, at the far end a silhouette speaking with the viewer's mouth shape before the viewer speaks, layered acoustic dread." },
+    { "id": "core-008", "prompt": "Large wall clock one minute before the hour in a dark room, its reflection already shows the minute hand after the hour, a barely visible visitor standing where the next chapter should appear." },
+    { "id": "final-20260731", "prompt": "Final psychological horror image: an empty ordinary room at 23:00, no creature anywhere, but three overlapping human shadows belong to one person, each shadow facing a different unchosen future, quiet tragic atmosphere." }
+  ]
+}
