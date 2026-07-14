@@ -1,17 +1,19 @@
 import "./app.css";
 import "./player-identity.css";
 import "./responsive.css";
+import "./narrative-refresh.css";
 import HorrorEffects from "../components/HorrorEffects";
 import PlayerIdentity from "../components/PlayerIdentity";
 import ResponsiveExperience from "../components/ResponsiveExperience";
+import NarrativeRefresh from "../components/NarrativeRefresh";
 
 export const metadata = {
   title: "Echoes Beneath｜底下的回聲",
-  description: "一款支援手機與電腦開場、讓玩家自行命名，並記住每次選擇與所在地的現代恐怖網頁 RPG。",
+  description: "一款支援手機與電腦開場、讓玩家自行命名，並以精簡多變選項展開的現代恐怖網頁 RPG。",
   metadataBase: new URL("https://echoes-beneath.vercel.app"),
   openGraph: {
     title: "Echoes Beneath｜底下的回聲",
-    description: "手機與電腦會出現不同開場；寫下你的名字，再走進每個選擇都不同的恐怖故事。",
+    description: "手機與電腦會出現不同開場；第二章後採用短篇幅、不同玩法的三選項故事。",
     type: "website"
   }
 };
@@ -22,7 +24,9 @@ export default function RootLayout({ children }) {
       <body>
         <PlayerIdentity>
           <ResponsiveExperience>
-            <HorrorEffects>{children}</HorrorEffects>
+            <NarrativeRefresh>
+              <HorrorEffects>{children}</HorrorEffects>
+            </NarrativeRefresh>
           </ResponsiveExperience>
         </PlayerIdentity>
       </body>
