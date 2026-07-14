@@ -1,0 +1,5 @@
+.story-copy{display:grid;gap:1.15em}
+.story-copy p{margin:0;text-indent:2em}
+.story-copy p:first-child{text-indent:0}
+.result-card p,.ending-card p{white-space:pre-line}
+@media(max-width:700px){.story-copy{gap:1em}.story-copy p{text-indent:1.5em}}
