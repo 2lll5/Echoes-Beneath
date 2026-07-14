@@ -1,0 +1,50 @@
+name: Hourly Story Update
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+    inputs:
+      story_now:
+        description: "Optional ISO time used to test generation"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: echoes-beneath-hourly-story
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate one hourly episode
+        env:
+          STORY_NOW: ${{ inputs.story_now }}
+        run: node scripts/generate-story.mjs
+
+      - name: Commit new story when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- public/story.generated.json; then
+            echo "No new episode for this hour."
+            exit 0
+          fi
+
+          git config user.name "echoes-beneath-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/story.generated.json
+          git commit -m "story: add hourly echo"
+          git push
