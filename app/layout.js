@@ -1,5 +1,7 @@
 import "./globals.css";
 import "./branching.css";
+import "./effects.css";
+import HorrorEffects from "../components/HorrorEffects";
 
 export const metadata = {
   title: "Echoes Beneath｜底下的回聲",
@@ -15,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-Hant">
-      <body>{children}</body>
+      <body><HorrorEffects>{children}</HorrorEffects></body>
     </html>
   );
 }
