@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-07-14T09:42:51.407Z",
+  "generatedAt": "2026-07-14T11:15:06.655Z",
   "timezone": "Asia/Taipei",
   "finalScheduledAt": "2026-07-31T23:00:00+08:00",
-  "releasedDepth": 7,
+  "releasedDepth": 8,
   "final": false,
   "layerEvents": [
     {
@@ -61,6 +61,14 @@
       "motif": "某個出口的門把比室溫低了十幾度",
       "distortion": "每次你移動到相鄰場所，異常都會晚一步留下能被追查的痕跡",
       "whisper": "「不要把出口和安全當成同一件事。」"
+    },
+    {
+      "depth": 8,
+      "hourKey": "20260714-19",
+      "releaseAt": "2026-07-14 19:00",
+      "motif": "附近的電器同時顯示一個尚未做出的選擇編號",
+      "distortion": "每次你移動到相鄰場所，異常都會晚一步留下能被追查的痕跡",
+      "whisper": "「不要把出口和安全當成同一件事。」"
     }
   ],
   "updates": [
@@ -105,6 +113,12 @@
       "releaseAt": "2026-07-14 17:00",
       "type": "depth",
       "releasedDepth": 7
+    },
+    {
+      "hourKey": "20260714-19",
+      "releaseAt": "2026-07-14 19:00",
+      "type": "depth",
+      "releasedDepth": 8
     }
   ]
 }
