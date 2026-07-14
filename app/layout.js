@@ -1,6 +1,4 @@
-import "./site.css";
-import "./effects.css";
-import "./novel.css";
+import "./app.css";
 import HorrorEffects from "../components/HorrorEffects";
 
 export const metadata = {
