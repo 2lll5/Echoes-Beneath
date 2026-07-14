@@ -1,4 +1,4 @@
-name: Hourly Story Update
+name: Hourly Story Graph Growth
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       story_now:
-        description: "Optional ISO time used to test generation"
+        description: "Optional ISO time used to test graph growth"
         required: false
         type: string
 
@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  generate:
+  grow-graph:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -30,21 +30,21 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Generate one hourly episode
+      - name: Release one new story depth
         env:
           STORY_NOW: ${{ inputs.story_now }}
         run: node scripts/generate-story.mjs
 
-      - name: Commit new story when changed
+      - name: Commit graph state when changed
         shell: bash
         run: |
           if git diff --quiet -- public/story.generated.json; then
-            echo "No new episode for this hour."
+            echo "No new graph depth for this Taipei hour."
             exit 0
           fi
 
           git config user.name "echoes-beneath-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/story.generated.json
-          git commit -m "story: add hourly echo"
+          git commit -m "story: release hourly graph depth"
           git push
