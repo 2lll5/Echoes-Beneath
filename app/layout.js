@@ -1,14 +1,15 @@
 import "./site.css";
 import "./effects.css";
+import "./novel.css";
 import HorrorEffects from "../components/HorrorEffects";
 
 export const metadata = {
   title: "Echoes Beneath｜底下的回聲",
-  description: "一款以真正樹狀故事圖記住選擇、場景與重啟次數的近身恐怖網頁 RPG。",
+  description: "一款以現代恐怖小說筆法呈現、並記住每次選擇與所在地的樹狀網頁 RPG。",
   metadataBase: new URL("https://echoes-beneath.vercel.app"),
   openGraph: {
     title: "Echoes Beneath｜底下的回聲",
-    description: "每一個選擇都通往不同節點；只有連貫的故事才會重新交織。",
+    description: "以具體場景、人物動作和自然對話展開，每一個選擇都通往不同後續。",
     type: "website"
   }
 };
