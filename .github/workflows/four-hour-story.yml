@@ -1,0 +1,55 @@
+name: Four-Hour Story Graph Growth
+
+on:
+  schedule:
+    # GitHub cron uses UTC. With Asia/Taipei at UTC+8, this runs at
+    # 00:00, 04:00, 08:00, 12:00, 16:00 and 20:00 Taipei time.
+    - cron: "0 */4 * * *"
+    # Preserve the promised final activation at 2026-07-31 23:00 Taipei
+    # (15:00 UTC). The generator makes the final state idempotent.
+    - cron: "0 15 31 7 *"
+  workflow_dispatch:
+    inputs:
+      story_now:
+        description: "Optional ISO time used to test graph growth"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: echoes-beneath-four-hour-story
+  cancel-in-progress: false
+
+jobs:
+  grow-graph:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Release one new story depth or final state
+        env:
+          STORY_NOW: ${{ inputs.story_now }}
+        run: node scripts/generate-story.mjs
+
+      - name: Commit graph state when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- public/story.generated.json; then
+            echo "No new graph depth for this four-hour slot."
+            exit 0
+          fi
+
+          git config user.name "echoes-beneath-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/story.generated.json
+          git commit -m "story: release four-hour graph depth"
+          git push
