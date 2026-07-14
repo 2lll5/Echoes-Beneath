@@ -1,90 +1,121 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-07-14T13:02:28.000Z",
+  "generatedAt": "2026-07-14T13:50:00.000Z",
   "timezone": "Asia/Taipei",
   "finalScheduledAt": "2026-07-31T23:00:00+08:00",
   "releasedDepth": 10,
   "final": false,
+  "proseStyle": "modern-horror-novel",
   "layerEvents": [
     {
       "depth": 1,
       "hourKey": "seed-01",
       "releaseAt": "2026-07-14 16:00",
-      "motif": "\u87a2\u5e55\u908a\u7de3\u6d6e\u51fa\u4e00\u5708\u9727",
-      "distortion": "\u5012\u5f71\u6bd4\u4f60\u7684\u52d5\u4f5c\u5feb\u4e86\u534a\u79d2",
-      "whisper": "\u300c\u4f60\u9078\u7684\u662f\u6211\uff0c\u4e0d\u662f\u9580\u3002\u300d"
+      "motif": "螢幕邊緣浮出一圈霧",
+      "distortion": "倒影比你的動作快了半秒",
+      "whisper": "你選的是我，不是門。",
+      "sceneBeat": "關機螢幕的黑色邊框慢慢蒙上一層白霧，霧裡有人用指尖畫出一個箭頭，箭頭正指向你的椅背。",
+      "sensory": "房間裡沒有開冷氣，你的手臂卻起了一層雞皮疙瘩；塑膠螢幕外殼散出被雨淋過的味道。",
+      "dialogue": "你選的是我，不是門。"
     },
     {
       "depth": 2,
       "hourKey": "seed-02",
       "releaseAt": "2026-07-14 17:00",
-      "motif": "\u9580\u628a\u7559\u4e0b\u5f9e\u623f\u5167\u63e1\u4f4f\u7684\u6307\u7d0b",
-      "distortion": "\u8d70\u5eca\u7684\u611f\u61c9\u71c8\u671d\u623f\u9593\u65b9\u5411\u4f9d\u5e8f\u4eae\u8d77",
-      "whisper": "\u300c\u4e0d\u8981\u628a\u51fa\u53e3\u548c\u5b89\u5168\u6df7\u5728\u4e00\u8d77\u3002\u300d"
+      "motif": "門把留下從房內握住的指紋",
+      "distortion": "走廊的感應燈朝房間方向依序亮起",
+      "whisper": "不要把出口和安全混在一起。",
+      "sceneBeat": "你把手從門把上移開，金屬表面卻多出另一組指紋。那組指紋從房間這一側握住門把，手掌大小和你完全一樣。",
+      "sensory": "走廊的感應燈一盞接一盞亮起，光線不是往外延伸，而是一路朝你的房門靠近。",
+      "dialogue": "門可以打開，不代表外面是讓你出去的地方。"
     },
     {
       "depth": 3,
       "hourKey": "seed-03",
       "releaseAt": "2026-07-14 18:00",
-      "motif": "\u7246\u5167\u50b3\u4f86\u898f\u5f8b\u7684\u4e09\u6b21\u6572\u64ca",
-      "distortion": "\u6572\u64ca\u9806\u5e8f\u6b63\u597d\u91cd\u64ad\u4f60\u7684\u9078\u64c7",
-      "whisper": "\u300c\u53e6\u4e00\u500b\u4f60\u5df2\u7d93\u8d70\u5b8c\u9019\u88e1\u3002\u300d"
+      "motif": "牆內傳來規律的三次敲擊",
+      "distortion": "敲擊順序正好重播你的選擇",
+      "whisper": "另一個你已經走完這裡。",
+      "sceneBeat": "牆內先敲一下，停兩秒，再連敲兩下。那正是你剛才點擊三個選項時的節奏。",
+      "sensory": "牆紙在你眼前微微鼓起，像有人把額頭抵在另一側；石膏粉從接縫落到枕頭上。",
+      "dialogue": "另一個你走得比較快。他已經知道樓下有什麼了。"
     },
     {
       "depth": 4,
       "hourKey": "seed-04",
       "releaseAt": "2026-07-14 19:00",
-      "motif": "\u6240\u6709\u9418\u9762\u540c\u6642\u5c11\u4e86\u4e00\u5206\u9418",
-      "distortion": "\u8072\u97f3\u958b\u59cb\u6bd4\u4f86\u6e90\u66f4\u65e9\u62b5\u9054",
-      "whisper": "\u300c\u76f8\u5bb9\u7684\u8def\u6703\u5728\u4e0b\u4e00\u500b\u8f49\u89d2\u4ea4\u6703\u3002\u300d"
+      "motif": "所有鐘面同時少了一分鐘",
+      "distortion": "聲音開始比來源更早抵達",
+      "whisper": "下一個轉角有人也會走到這裡。",
+      "sceneBeat": "手機、微波爐和電梯樓層燈同時跳回一分鐘前。你還沒聽見門響，門把卻已經震了一下。",
+      "sensory": "空氣短暫變得很稠，耳膜像搭電梯時一樣往內壓；遠處有人跑上樓梯，腳步卻先在你背後響起。",
+      "dialogue": "下一個轉角會有人和你同時到。先看清楚他的鞋。"
     },
     {
       "depth": 5,
       "hourKey": "seed-05",
       "releaseAt": "2026-07-14 20:00",
-      "motif": "\u7a7a\u6c23\u88e1\u51fa\u73fe\u6fd5\u51b7\u7684\u91d1\u5c6c\u5473",
-      "distortion": "\u6bcf\u500b\u51fa\u53e3\u5f8c\u90fd\u50b3\u4f86\u540c\u4e00\u96d9\u978b\u7684\u6469\u64e6\u8072",
-      "whisper": "\u300c\u5b83\u53ea\u80fd\u8ddf\u8457\u4f60\u771f\u6b63\u8d70\u904e\u7684\u5730\u65b9\u3002\u300d"
+      "motif": "空氣裡出現濕冷的金屬味",
+      "distortion": "每個出口後都傳來同一雙鞋的摩擦聲",
+      "whisper": "它只走你走過的路。",
+      "sceneBeat": "你聞到像生鏽鐵門被雨淋過的味道。下一秒，每個出口後方都傳來同一雙濕鞋拖過地面的聲音。",
+      "sensory": "鞋底摩擦聲總比你慢一步；你停，它也停，你往左，它便從剛才走過的門後跟著轉向。",
+      "dialogue": "別跑直線。它只會沿著你剛才走過的地方追。"
     },
     {
       "depth": 6,
       "hourKey": "seed-06",
       "releaseAt": "2026-07-14 21:00",
-      "motif": "\u4e00\u5c0f\u584a\u9670\u5f71\u62d2\u7d55\u8ddf\u96a8\u5149\u7dda\u79fb\u52d5",
-      "distortion": "\u4f60\u6c92\u6709\u9078\u7684\u52d5\u4f5c\u51fa\u73fe\u5728\u53e6\u4e00\u500b\u8868\u9762\u4e0a",
-      "whisper": "\u300c\u5225\u8b93\u5b83\u5192\u5145\u5df2\u7d93\u767c\u751f\u7684\u4e8b\u3002\u300d"
+      "motif": "一小塊陰影拒絕跟隨光線移動",
+      "distortion": "你沒選的動作出現在另一個表面",
+      "whisper": "別讓它替你做完那個選擇。",
+      "sceneBeat": "你移動手機手電筒，牆上的影子全都跟著偏移，只有角落那一小塊仍黏在原地。影子裡的人正做著你上一幕沒有選的動作。",
+      "sensory": "那個動作每重複一次，附近就有一件物品跟著改變位置；杯子滑了半公分，門鎖也自己轉了一格。",
+      "dialogue": "那不是回憶。它正在替你把沒做的事補完。"
     },
     {
       "depth": 7,
       "hourKey": "20260714-17",
       "releaseAt": "2026-07-14 17:00",
-      "motif": "\u67d0\u500b\u51fa\u53e3\u7684\u9580\u628a\u6bd4\u5ba4\u6eab\u4f4e\u4e86\u5341\u5e7e\u5ea6",
-      "distortion": "\u6bcf\u6b21\u4f60\u79fb\u52d5\u5230\u76f8\u9130\u5834\u6240\uff0c\u7570\u5e38\u90fd\u6703\u665a\u4e00\u6b65\u7559\u4e0b\u80fd\u88ab\u8ffd\u67e5\u7684\u75d5\u8de1",
-      "whisper": "\u300c\u4e0d\u8981\u628a\u51fa\u53e3\u548c\u5b89\u5168\u7576\u6210\u540c\u4e00\u4ef6\u4e8b\u3002\u300d"
+      "motif": "某個出口的門把比室溫低了十幾度",
+      "distortion": "異常會晚一步留下痕跡",
+      "whisper": "別用手直接碰。",
+      "sceneBeat": "你碰到門把前先用袖口包住手。布料一貼上金屬，表面立刻結出薄霜，霜裡浮出五個剛離開的指印。",
+      "sensory": "冷氣沿著手腕鑽進袖口，身後同時傳來一聲很輕的咳嗽；地板多出半枚濕鞋印，像有人慢了一步才站到你背後。",
+      "dialogue": "我不是叫你別開門。我是叫你別讓它摸到你的手。"
     },
     {
       "depth": 8,
       "hourKey": "20260714-19",
       "releaseAt": "2026-07-14 19:00",
-      "motif": "\u9644\u8fd1\u7684\u96fb\u5668\u540c\u6642\u986f\u793a\u4e00\u500b\u5c1a\u672a\u505a\u51fa\u7684\u9078\u64c7\u7de8\u865f",
-      "distortion": "\u6bcf\u6b21\u4f60\u79fb\u52d5\u5230\u76f8\u9130\u5834\u6240\uff0c\u7570\u5e38\u90fd\u6703\u665a\u4e00\u6b65\u7559\u4e0b\u80fd\u88ab\u8ffd\u67e5\u7684\u75d5\u8de1",
-      "whisper": "\u300c\u4e0d\u8981\u628a\u51fa\u53e3\u548c\u5b89\u5168\u7576\u6210\u540c\u4e00\u4ef6\u4e8b\u3002\u300d"
+      "motif": "附近電器顯示尚未做出的選擇編號",
+      "distortion": "異常提前留下你下一步的痕跡",
+      "whisper": "三號不是你選的。",
+      "sceneBeat": "電梯顯示器、洗衣機面板和你的手機同時亮出數字 03。你還沒有碰任何按鈕，第三個選項的邊框卻先變成了紅色。",
+      "sensory": "耳邊傳來按鍵被壓下的嗶聲，接著是遠處門鎖開啟的喀噠聲；那扇門不在你眼前，卻確實位於相連的下一個場所。",
+      "dialogue": "三號不是你選的。有人在另一條路替你按了。"
     },
     {
       "depth": 9,
       "hourKey": "20260714-20",
       "releaseAt": "2026-07-14 20:00",
-      "motif": "\u9580\u7e2b\u4e0b\u591a\u51fa\u4e00\u9053\u4e0d\u5c6c\u65bc\u4efb\u4f55\u71c8\u6e90\u7684\u5149",
-      "distortion": "\u90a3\u500b\u8072\u97f3\u80fd\u9810\u6e2c\u4f60\u7684\u50be\u5411\uff0c\u537b\u7121\u6cd5\u9810\u6e2c\u4f60\u5c1a\u672a\u770b\u898b\u7684\u51fa\u53e3",
-      "whisper": "\u300c\u76f8\u5bb9\u7684\u6545\u4e8b\u53ef\u4ee5\u4ea4\u6703\uff0c\u4e0d\u76f8\u5bb9\u7684\u53ea\u80fd\u9694\u7246\u8aaa\u8a71\u3002\u300d"
+      "motif": "門縫下多出一道不屬於任何燈源的光",
+      "distortion": "聲音只知道你已看過的出口",
+      "whisper": "別告訴它下一扇門在哪裡。",
+      "sceneBeat": "門縫下滲進一道淡藍色的光。你把手機貼近地面，鏡頭裡卻看不見光源，只看見有人影蹲在門外，正把耳朵貼著門板。",
+      "sensory": "你故意看向另一個出口，門外的人立刻跟著挪動；當你閉上眼，它便停在原地，不知道該往哪裡走。",
+      "dialogue": "它聽得見你的呼吸，也看得懂你的眼神。別讓它知道下一扇門在哪裡。"
     },
     {
       "depth": 10,
       "hourKey": "20260714-21",
       "releaseAt": "2026-07-14 21:00",
-      "motif": "\u540c\u4e00\u500b\u901a\u77e5\u8072\u5f9e\u5169\u500b\u76f8\u9023\u5834\u6240\u5148\u5f8c\u97ff\u8d77",
-      "distortion": "\u672a\u9078\u7684\u52d5\u4f5c\u6703\u51fa\u73fe\u5728\u9644\u8fd1\u8868\u9762\u4e0a\uff0c\u537b\u4e0d\u80fd\u6539\u5beb\u4f60\u5df2\u7d93\u505a\u904e\u7684\u4e8b",
-      "whisper": "\u300c\u6211\u8a18\u5f97\u4f60\u7684\u4e0a\u4e00\u500b\u9078\u64c7\uff0c\u6240\u4ee5\u4e0d\u9700\u8981\u731c\u3002\u300d"
+      "motif": "同一個通知聲從兩個相連場所先後響起",
+      "distortion": "未選的動作只能出現在附近表面",
+      "whisper": "我記得你上一個選擇。",
+      "sceneBeat": "你的手機響了一聲。兩秒後，隔壁相連的空間裡又響起完全相同的通知音。第二個聲音更近，像有人拿著另一支相同的手機站在門後。",
+      "sensory": "螢幕跳出一張剛拍攝的照片：照片裡的你正伸手去碰上一幕沒有選的東西，背景仍是你現在所在的地方。",
+      "dialogue": "我記得你上一個選擇。你不碰的東西，另一個你會替你碰。"
     }
   ],
   "updates": [
