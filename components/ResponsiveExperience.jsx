@@ -30,6 +30,18 @@ function isRootScene() {
   return Boolean(marker?.textContent?.includes("故事節點 root"));
 }
 
+function currentTime() {
+  return new Intl.DateTimeFormat("zh-TW", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  }).format(new Date());
+}
+
+function renderText(value) {
+  return String(value).replaceAll("{{time}}", currentTime());
+}
+
 export default function ResponsiveExperience({ children }) {
   const originalsRef = useRef(new Map());
   const selectedChoiceRef = useRef(null);
@@ -40,8 +52,9 @@ export default function ResponsiveExperience({ children }) {
 
     const rememberAndSet = (element, value) => {
       if (!element) return;
+      const rendered = renderText(value);
       if (!originalsRef.current.has(element)) originalsRef.current.set(element, element.textContent || "");
-      if (element.textContent !== value) element.textContent = value;
+      if (element.textContent !== rendered) element.textContent = rendered;
     };
 
     const restoreOpening = () => {
