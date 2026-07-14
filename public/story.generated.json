@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-07-14T11:15:06.655Z",
+  "generatedAt": "2026-07-14T12:03:42.000Z",
   "timezone": "Asia/Taipei",
   "finalScheduledAt": "2026-07-31T23:00:00+08:00",
-  "releasedDepth": 8,
+  "releasedDepth": 9,
   "final": false,
   "layerEvents": [
     {
@@ -69,6 +69,14 @@
       "motif": "附近的電器同時顯示一個尚未做出的選擇編號",
       "distortion": "每次你移動到相鄰場所，異常都會晚一步留下能被追查的痕跡",
       "whisper": "「不要把出口和安全當成同一件事。」"
+    },
+    {
+      "depth": 9,
+      "hourKey": "20260714-20",
+      "releaseAt": "2026-07-14 20:00",
+      "motif": "門縫下多出一道不屬於任何燈源的光",
+      "distortion": "那個聲音能預測你的傾向，卻無法預測你尚未看見的出口",
+      "whisper": "「相容的故事可以交會，不相容的只能隔牆說話。」"
     }
   ],
   "updates": [
@@ -119,6 +127,12 @@
       "releaseAt": "2026-07-14 19:00",
       "type": "depth",
       "releasedDepth": 8
+    },
+    {
+      "hourKey": "20260714-20",
+      "releaseAt": "2026-07-14 20:00",
+      "type": "depth",
+      "releasedDepth": 9
     }
   ]
 }
