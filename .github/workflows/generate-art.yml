@@ -1,0 +1,43 @@
+name: Generate GPT Image 2 Art
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: "Regenerate existing images"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  generate-art:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate scene images
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FORCE_REGENERATE: ${{ inputs.force_regenerate && '1' || '' }}
+        run: node scripts/generate-images.mjs
+
+      - name: Commit generated assets
+        shell: bash
+        run: |
+          if git diff --quiet -- public/art; then
+            echo "No generated images changed."
+            exit 0
+          fi
+          git config user.name "echoes-beneath-art-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/art/*.png
+          git commit -m "art: generate GPT Image 2 scenes"
+          git push
