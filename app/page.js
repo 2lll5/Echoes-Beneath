@@ -1,5 +1,5 @@
-import Game from "../components/Game";
+import GameRuntime from "../components/GameRuntime";
 
 export default function Home() {
-  return <Game />;
+  return <GameRuntime />;
 }
