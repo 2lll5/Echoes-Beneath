@@ -1,6 +1,24 @@
 {
-  "generatedAt": null,
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-14T08:00:00.000Z",
   "timezone": "Asia/Taipei",
   "finalScheduledAt": "2026-07-31T23:00:00+08:00",
-  "episodes": []
+  "releasedDepth": 6,
+  "final": false,
+  "layerEvents": [
+    { "depth": 1, "hourKey": "seed-01", "releaseAt": "2026-07-14 16:00", "motif": "螢幕邊緣浮出一圈霧", "distortion": "倒影比你的動作快了半秒", "whisper": "「你選的是我，不是門。」" },
+    { "depth": 2, "hourKey": "seed-02", "releaseAt": "2026-07-14 17:00", "motif": "門把留下從房內握住的指紋", "distortion": "走廊的感應燈朝房間方向依序亮起", "whisper": "「不要把出口和安全混在一起。」" },
+    { "depth": 3, "hourKey": "seed-03", "releaseAt": "2026-07-14 18:00", "motif": "牆內傳來規律的三次敲擊", "distortion": "敲擊順序正好重播你的選擇", "whisper": "「另一個你已經走完這裡。」" },
+    { "depth": 4, "hourKey": "seed-04", "releaseAt": "2026-07-14 19:00", "motif": "所有鐘面同時少了一分鐘", "distortion": "聲音開始比來源更早抵達", "whisper": "「相容的路會在下一個轉角交會。」" },
+    { "depth": 5, "hourKey": "seed-05", "releaseAt": "2026-07-14 20:00", "motif": "空氣裡出現濕冷的金屬味", "distortion": "每個出口後都傳來同一雙鞋的摩擦聲", "whisper": "「它只能跟著你真正走過的地方。」" },
+    { "depth": 6, "hourKey": "seed-06", "releaseAt": "2026-07-14 21:00", "motif": "一小塊陰影拒絕跟隨光線移動", "distortion": "你沒有選的動作出現在另一個表面上", "whisper": "「別讓它冒充已經發生的事。」" }
+  ],
+  "updates": [
+    { "hourKey": "seed-01", "releaseAt": "2026-07-14 16:00", "type": "seed", "releasedDepth": 1 },
+    { "hourKey": "seed-02", "releaseAt": "2026-07-14 17:00", "type": "seed", "releasedDepth": 2 },
+    { "hourKey": "seed-03", "releaseAt": "2026-07-14 18:00", "type": "seed", "releasedDepth": 3 },
+    { "hourKey": "seed-04", "releaseAt": "2026-07-14 19:00", "type": "seed", "releasedDepth": 4 },
+    { "hourKey": "seed-05", "releaseAt": "2026-07-14 20:00", "type": "seed", "releasedDepth": 5 },
+    { "hourKey": "seed-06", "releaseAt": "2026-07-14 21:00", "type": "seed", "releasedDepth": 6 }
+  ]
 }
