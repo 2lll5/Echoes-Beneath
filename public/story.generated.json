@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-07-14T14:00:00.000Z",
+  "generatedAt": "2026-07-14T15:00:00.000Z",
   "timezone": "Asia/Taipei",
   "finalScheduledAt": "2026-07-31T23:00:00+08:00",
-  "releasedDepth": 11,
+  "releasedDepth": 12,
   "final": false,
   "proseStyle": "modern-horror-novel",
   "layerEvents": [
@@ -127,6 +127,17 @@
       "sceneBeat": "手機自行播放一段十四秒的錄影。鏡頭架在相連出口的另一側，畫面裡的你正從眼前這道門走進來，右手握著手機；錄影進度只剩三秒時，一個穿灰色外套的女人從鏡頭後伸手，把畫面裡的你猛地拉到門邊。",
       "sensory": "揚聲器傳出衣料被扯緊的窸窣聲，接著是一口貼近麥克風的喘息。現實中的門框同時震了一下，灰塵落上你的鞋尖，空氣裡浮出濕羊毛和廉價薄荷菸的味道。",
       "dialogue": "等他先進來。別站在他替你留的位置。"
+    },
+    {
+      "depth": 12,
+      "hourKey": "20260714-23",
+      "releaseAt": "2026-07-14 23:00",
+      "motif": "灰外套女人從玩家剛走過的門檻現身",
+      "distortion": "她的袖口沾著尚未抵達場所的灰塵",
+      "whisper": "我不是錄影裡的人。錄影是我死後才拍的。",
+      "sceneBeat": "你把手機壓低，沒有站進錄影替你留下的位置。身後那道剛走過的門先開了一條縫，一隻蒼白的手貼著門板伸進來。穿灰色外套的女人側身擠過門檻，立刻反手扣住門鎖；門外有另一隻手慢了半拍，五根手指重重撞在鎖舌旁。她用肩膀頂住門，朝你伸出食指貼在唇前。",
+      "sensory": "鎖舌在金屬槽裡連震三下，震動沿牆面傳到你的指節。女人的外套滴著冰水，濕羊毛味裡混著薄荷菸、舊電梯機油和淡淡的血腥；她袖口黏著一種細白粉塵，不屬於你眼前的地面。門外的人用你的指甲刮門，聲音又乾又慢。",
+      "dialogue": "別叫我錄影裡那個人。那段影像，是我死後才拍的。"
     }
   ],
   "updates": [
@@ -140,6 +151,7 @@
     {"hourKey":"20260714-19","releaseAt":"2026-07-14 19:00","type":"depth","releasedDepth":8},
     {"hourKey":"20260714-20","releaseAt":"2026-07-14 20:00","type":"depth","releasedDepth":9},
     {"hourKey":"20260714-21","releaseAt":"2026-07-14 21:00","type":"depth","releasedDepth":10},
-    {"hourKey":"20260714-22","releaseAt":"2026-07-14 22:00","type":"depth","releasedDepth":11}
+    {"hourKey":"20260714-22","releaseAt":"2026-07-14 22:00","type":"depth","releasedDepth":11},
+    {"hourKey":"20260714-23","releaseAt":"2026-07-14 23:00","type":"depth","releasedDepth":12}
   ]
 }
