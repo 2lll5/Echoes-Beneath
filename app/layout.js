@@ -1,12 +1,13 @@
 import "./globals.css";
+import "./branching.css";
 
 export const metadata = {
   title: "Echoes Beneath｜底下的回聲",
-  description: "一款會記住你選擇與重啟次數的近身恐怖網頁 RPG。",
+  description: "一款以真正樹狀故事圖記住選擇、場景與重啟次數的近身恐怖網頁 RPG。",
   metadataBase: new URL("https://echoes-beneath.vercel.app"),
   openGraph: {
     title: "Echoes Beneath｜底下的回聲",
-    description: "你關掉頁面之後，它仍然記得你。",
+    description: "每一個選擇都通往不同節點；只有連貫的故事才會重新交織。",
     type: "website"
   }
 };
