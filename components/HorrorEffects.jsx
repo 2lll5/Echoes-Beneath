@@ -41,6 +41,7 @@ export default function HorrorEffects({ children }) {
       !reducedMotion.matches &&
       !activeRef.current &&
       !document.querySelector(".modal-backdrop") &&
+      !document.querySelector(".name-modal-backdrop") &&
       Date.now() - lastTriggeredAtRef.current > 26000;
 
     const triggerEffect = ({ force = false } = {}) => {
